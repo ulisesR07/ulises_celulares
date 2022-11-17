@@ -1,0 +1,85 @@
+[{
+    "id": 1,
+    "cat": "Samsung",
+    "nombre": "Samsung S21 FE",
+    "precio": 200000,
+    "img": "../img/S21FE.png"
+},
+{
+    "id": 2,
+    "cat": "Samsung",
+    "nombre": "Samsung S22",
+    "precio": 292000,
+    "img": "../img/S22.png"
+},
+{
+    "id": 3,
+    "cat": "Samsung",
+    "nombre": "Samsung a03",
+    "precio": 46000,
+    "img": "../img/GalaxyA03.png"
+},
+{
+    "id": 4,
+    "cat": "Samsung",
+    "nombre": "Samsung a52S",
+    "precio": 142000,
+    "img": "../img/a52s.png"
+},
+{
+    "id": 5,
+    "cat": "Motorola",
+    "nombre": "Motorola Edge20 pro",
+    "precio": 142000,
+    "img": "../img/motorolaEdge20.png"
+},
+{
+    "id": 6,
+    "cat": "Motorola",
+    "nombre": "Motorola G22",
+    "precio": 52000,
+    "img": "../img/motorolaG22.png"
+},
+{
+    "id": 7,
+    "cat": "Motorola",
+    "nombre": "Motorola G52",
+    "precio": 70000,
+    "img": "../img/motorolaG52.png"
+},
+{
+    "id": 8,
+    "cat": "Motorola",
+    "nombre": "Motorola G71",
+    "precio": 75000,
+    "img": "../img/MotorolaG71.png"
+},
+{
+    "id": 9,
+    "cat": "otros",
+    "nombre": "Yolo",
+    "precio": 27000,
+    "img": "../img/yolo.png"
+},
+{
+    "id": 10,
+    "cat": "otros",
+    "nombre": "ZTE5",
+    "precio": 28000,
+    "img": "../img/ZTE5.png"
+},
+{
+    "id": 11,
+    "cat": "otros",
+    "nombre": "QuantumQ20",
+    "precio": 48000,
+    "img": "../img/quantumQ20.png"
+},
+{
+    "id": 12,
+    "cat": "otros",
+    "nombre": "Quantum Yolo",
+    "precio": 25000,
+    "img": "../img/quantumYolo.png"
+}
+]

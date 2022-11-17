@@ -1,0 +1,790 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@1,600&family=Poppins:wght@300;600&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  background: rgba(245, 229, 203, 0.904);
+  font-size: 16px;
+}
+
+h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn, .productos__card .card-row .card-home .btn, .container .card-home .btn, .container .productos-text .btn {
+  background: rgb(148, 138, 138);
+  border-radius: 5%;
+  color: white;
+  border: none;
+  transition: all 1s;
+}
+.btn:hover, .productos__card .card-row .card-home .btn:hover, .container .card-home .btn:hover, .container .productos-text .btn:hover {
+  background: rgb(219, 206, 161);
+  color: white;
+  transform: scale(1.1);
+}
+  .btn a, .productos__card .card-row .card-home .btn a, .container .card-home .btn a, .container .productos-text .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .foot .redes .redes_iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disclaimer {
+  visibility: hidden;
+}
+
+/* --------------------------------- header --------------------------------- */
+header {
+  z-index: 10;
+  background: #747c58;
+  position: sticky;
+  top: 0;
+  font-size: 1em;
+  /* ------------------------------- inicio nav ------------------------------- */
+}
+header .row {
+  max-width: 72rem;
+  margin: auto;
+}
+header .row .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 10em;
+}
+header .row .logo .logo-img {
+  width: 4em;
+  border-radius: 20%;
+  padding: 0.5em;
+}
+header .row .logo h1 {
+  color: rgb(219, 206, 161);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8em;
+  font-weight: unset;
+  align-self: center;
+}
+@media screen and (max-width: 700px) {
+  header .row .logo {
+    padding-left: 2em;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .row .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 0em;
+  }
+}
+header .row .cuenta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 400px) {
+  header .row .cuenta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 0em;
+  }
+}
+header .row .cuenta .botonLogin {
+  color: rgb(242, 239, 237);
+  align-self: center;
+  margin-bottom: 0.1em;
+  padding-right: 0.4em;
+  cursor: pointer;
+}
+header .row .cuenta .botonLogin p {
+  margin-bottom: 0em;
+}
+header .row .cuenta .login--borrar {
+  display: none;
+}
+header .row .cuenta .btnCarrito {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  padding: 0.5em;
+}
+header .row .cuenta .btnCarrito:focus {
+  box-shadow: none !important;
+}
+@media screen and (max-width: 576px) {
+  header .row .cuenta .btnCarrito {
+    padding: 0em;
+    width: 20%;
+  }
+}
+header .row .cuenta .btnCarrito .logo-carrito {
+  padding-right: 0.2em;
+  align-self: center;
+  width: 100%;
+}
+header .row .cuenta .btnCarrito .contCarrito {
+  align-self: center;
+  color: rgb(243, 243, 225);
+}
+@media screen and (max-width: 1200px) {
+  header .row {
+    max-width: 60rem;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .row {
+    max-width: 50rem;
+    margin: auto;
+  }
+}
+header .navbar {
+  box-shadow: 0 0 5px 0 rgb(221, 215, 215);
+  z-index: 10;
+  padding: 0px;
+  position: relative;
+  top: 0;
+}
+header .button-nav {
+  background: rgb(243, 243, 225);
+  color: gray;
+}
+header .navbar-collapse {
+  justify-content: center;
+}
+header .navbar-nav li:hover ul {
+  display: block;
+}
+header .nav-link {
+  color: rgb(243, 243, 225) !important;
+  font-size: 1.2em;
+  --clippy: polygon(0 0, 0 0, 0 98%, 0% 100%);
+}
+header .nav-link::after {
+  content: "";
+  display: block;
+  background: white;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 0.5s;
+}
+header .nav-link:hover {
+  color: rgb(37, 36, 36);
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .categoria {
+  background: #747c58;
+  color: rgb(243, 243, 225);
+}
+header .categoria .cat-item {
+  padding: 0.2em 0.5em;
+}
+header .categoria .cat-item:hover {
+  background: rgb(243, 243, 225);
+  color: black;
+  cursor: pointer;
+}
+header .navbar-toggler {
+  margin: 0.25rem;
+}
+@media screen and (max-width: 576px) {
+  header {
+    font-size: 12px;
+  }
+}
+
+/* ------------------------------- fin nav ------------------------------- */
+/* --------------------------------- header --------------------------------- */
+#header-home {
+  z-index: 10;
+  position: sticky;
+  transition: 0.7s;
+  margin-top: 20px;
+  top: 0;
+  font-size: 1.3em;
+  background: transparent;
+  /* ------------------------------- inicio nav ------------------------------- */
+}
+#header-home .barra {
+  max-width: 72rem;
+  margin: auto;
+}
+#header-home .barra .logo {
+  position: relative;
+  right: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 10em;
+}
+@media screen and (max-width: 976px) {
+  #header-home .barra .logo {
+    padding-left: 6em;
+    height: auto;
+  }
+}
+@media screen and (max-width: 546px) {
+  #header-home .barra .logo {
+    padding-left: 0em;
+    right: 0em;
+  }
+}
+#header-home .barra .logo a {
+  color: transparent;
+  display: flex;
+}
+#header-home .barra .logo a .logo-img {
+  border-radius: 20%;
+  visibility: hidden;
+}
+#header-home .barra .logo a .logo-portada {
+  object-fit: cover;
+  padding: 0.5em;
+}
+@media screen and (max-width: 976px) {
+  #header-home .barra .logo a .logo-portada {
+    width: 4em;
+  }
+}
+#header-home .barra .logo h1 {
+  color: rgb(219, 206, 161);
+  font-family: "Raleway", sans-serif;
+  font-size: 3em;
+  font-weight: unset;
+  align-self: flex-end;
+  margin-bottom: 0.5em;
+}
+@media screen and (max-width: 976px) {
+  #header-home .barra .logo h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 546px) {
+  #header-home .barra .logo h1 {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+  }
+}
+#header-home .barra .cuenta {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 400px) {
+  #header-home .barra .cuenta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 0em;
+  }
+}
+#header-home .barra .cuenta .botonLogin {
+  color: rgb(243, 243, 225);
+  align-self: center;
+  margin-bottom: 0.1em;
+  cursor: pointer;
+}
+#header-home .barra .cuenta .botonLogin .iniciar {
+  margin-bottom: 0em;
+}
+@media screen and (max-width: 546px) {
+  #header-home .barra .cuenta .botonLogin .iniciar {
+    font-size: 0.8em;
+  }
+}
+#header-home .barra .cuenta .login--borrar {
+  display: none;
+}
+#header-home .barra .cuenta .btnCarrito {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  padding: 0.5em;
+}
+#header-home .barra .cuenta .btnCarrito:focus {
+  box-shadow: none !important;
+}
+@media screen and (max-width: 576px) {
+  #header-home .barra .cuenta .btnCarrito {
+    padding: 0em;
+    width: 20%;
+  }
+}
+#header-home .barra .cuenta .btnCarrito .logo-carrito {
+  padding-right: 0.2em;
+  align-self: center;
+  width: 100%;
+}
+#header-home .barra .cuenta .btnCarrito .contCarrito {
+  align-self: center;
+  color: rgb(243, 243, 225);
+}
+#header-home.down {
+  background: #747c58;
+  font-size: 1rem;
+}
+#header-home.down .logo {
+  right: 0;
+}
+#header-home.down .logo a .logo-img {
+  visibility: visible;
+}
+#header-home.down .logo .logo-portada {
+  display: none;
+}
+#header-home.down .logo h1 {
+  color: rgb(219, 206, 161);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8em;
+  font-weight: unset;
+  align-self: center;
+}
+@media screen and (max-width: 976px) {
+  #header-home.down .logo h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+}
+#header-home.down .cuenta {
+  visibility: visible;
+}
+#header-home.down .dropdown-menu {
+  background: #747c58;
+}
+#header-home .navbar {
+  box-shadow: 0 0 5px 0 rgb(221, 215, 215);
+  z-index: 10;
+  padding: 0px;
+  position: relative;
+  top: 0;
+  transition: top 0.3s;
+}
+#header-home .button-nav {
+  background: rgb(243, 243, 225);
+  color: rgba(163, 165, 158, 0.4666666667);
+}
+#header-home .navbar-collapse {
+  justify-content: center;
+}
+#header-home .navbar-nav li:hover ul {
+  display: block;
+}
+#header-home .nav-link {
+  color: rgb(243, 243, 225) !important;
+  font-size: 1.2em;
+  --clippy: polygon(0 0, 0 0, 0 98%, 0% 100%);
+}
+#header-home .nav-link::after {
+  content: "";
+  display: block;
+  background: white;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 0.5s;
+}
+#header-home .nav-link:hover {
+  color: rgba(163, 165, 158, 0.4666666667);
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#header-home .navbar-toggler {
+  margin: 0.25em;
+}
+@media screen and (max-width: 576px) {
+  #header-home {
+    font-size: 1em;
+  }
+}
+
+/* ------------------------------- fin nav ------------------------------- */
+/* ------------------------------ inicio footer ----------------------------- */
+footer {
+  background: rgba(163, 165, 158, 0.4666666667);
+}
+footer .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: auto;
+}
+@media screen and (max-width: 576px) {
+  footer .foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+footer .foot .botonera_f {
+  margin: 0em 0.5em;
+}
+footer .foot .botonera_f .botonera_f_tit {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.4em;
+  font-size: 1.2em;
+  border-bottom: 1px solid black;
+}
+footer .foot .botonera_f ul li {
+  text-decoration: none;
+  list-style: none;
+  text-align: flex-start;
+  padding: 0.2em;
+}
+footer .foot .botonera_f ul li a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 660px) {
+  footer .foot .botonera_f {
+    display: none;
+  }
+}
+footer .foot .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0em 0.5em 0em 3em;
+}
+@media screen and (max-width: 576px) {
+  footer .foot .redes {
+    margin: 0.5em;
+  }
+}
+footer .foot .redes .redes_tit {
+  margin-top: 0.5rem;
+  padding: 0.4em;
+  font-size: 1.2em;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+footer .foot .redes .redes_iconos {
+  padding-top: 2rem;
+}
+footer .foot .redes .redes_iconos .redes_link1 {
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+}
+footer .foot .redes .redes_iconos .redes_link1 .redes-img {
+  width: 3.12em;
+  filter: grayscale(1);
+}
+footer .foot .redes .redes_iconos .redes_link1 .redes-img:hover {
+  filter: grayscale(0);
+}
+footer .foot .redes .logo-f {
+  display: flex;
+  margin-bottom: 1em;
+}
+footer .foot .redes .logo-f .logo-tit-f {
+  font-size: 1.5em;
+  color: rgba(35, 35, 33, 0.4666666667);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  align-self: center;
+  margin-bottom: 0em;
+}
+footer .foot .foot_contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  margin: 0em 0.5em;
+}
+footer .foot .foot_contacto .foot_contacto_tit {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem;
+  font-size: 1.2em;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+footer .foot .foot_contacto .box-contacto {
+  margin-left: 2em;
+}
+footer .foot .foot_contacto .box-contacto .foot_contacto_iconos {
+  display: flex;
+  justify-content: "";
+  align-items: center;
+  flex-direction: row;
+}
+footer .foot .foot_contacto .box-contacto .foot_contacto_iconos .icono {
+  width: 30px;
+}
+footer .foot .foot_contacto .box-contacto .foot_contacto_iconos a {
+  text-align: center;
+  padding: 0.6rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------------------- fin footer ------------------------------- */
+/* ---------------------------------- cuerpo home ---------------------------------- */
+.carousel {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+.carousel .carousel-inner {
+  height: 100%;
+}
+.carousel .carousel-inner .active {
+  height: 100%;
+}
+.carousel .carousel-inner .active img {
+  object-fit: cover;
+  height: 100%;
+}
+.carousel .carousel-inner .active .text-carousel {
+  font-size: 3em;
+  font-family: "Julius Sans One", sans-serif;
+  color: rgb(243, 243, 225);
+  margin-bottom: 5em;
+  background: rgba(129, 128, 125, 0.452);
+  border-radius: 5%;
+  box-shadow: 0 0 30px 0 rgb(167, 157, 157);
+}
+
+.container {
+  max-width: 72em;
+  margin: auto;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container .productos-text {
+    font-size: 12px;
+    padding: 0em 3em;
+  }
+}
+.container .productos-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.75em;
+  font-weight: 600;
+  color: #61584f;
+}
+.container .productos-text .productos-text-p {
+  margin-top: 1em;
+  font-size: 1.3em;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+}
+.container .card-home {
+  box-shadow: 0 0 30px 0 rgb(61, 39, 39);
+}
+.container .card-home .card-img-top {
+  transition: all 1s;
+  padding: 1em 1em;
+}
+.container .card-home .card-img-top img {
+  width: 100%;
+  align-self: center;
+}
+.container .card-home .card-img-top:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 576px) {
+  .container .card-home {
+    width: 80%;
+    height: auto;
+  }
+}
+.productos-destacados {
+  margin: 8em 1em;
+}
+@media screen and (max-width: 576px) {
+  .productos-destacados {
+    font-size: 12px;
+    margin: 4em 0em;
+  }
+}
+.productos-destacados h3 {
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5em 0em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.603);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.productos-destacados .splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* -------------------------------- Productos ------------------------------- */
+.tit-productos {
+  max-width: 1140px;
+  margin: auto;
+}
+.tit-productos h2 {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0.5em 0em;
+  border-bottom: 1px solid gray;
+  margin: 1em;
+}
+@media screen and (max-width: 576px) {
+  .tit-productos {
+    font-size: 14px;
+  }
+}
+
+.productos__card {
+  max-width: 1140px;
+  margin: auto;
+}
+@media screen and (max-width: 991px) {
+  .productos__card .card-row {
+    justify-content: center;
+  }
+}
+.productos__card .card-row .cont-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-bottom: 1em;
+}
+@media screen and (max-width: 575px) {
+  .productos__card .card-row .cont-card {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .productos__card .card-row .card-home {
+    margin: 0rem 2rem;
+    width: 70%;
+    height: auto;
+  }
+}
+.productos__card .card-row .card-home img {
+  padding-bottom: 0.5em;
+}
+.productos__card .card-row .card-home .card-title {
+  text-align: center;
+}
+.productos__card .card-row .card-home .card-text {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.productos__card .card-row .card-home .btn {
+  margin: 0em 2em 1em 2em;
+  padding: 0.5em 0em;
+}
+.productos__card .card-row .card-home .btn:focus {
+  box-shadow: none !important;
+}
+
+#carrito-contenedor .carritoVacio {
+  border: 2px solid rgb(219, 206, 161);
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+}
+#carrito-contenedor .card .row {
+  height: 100%;
+}
+#carrito-contenedor .card .row .img-carrito {
+  height: 100%;
+}
+#carrito-contenedor .card .row .img-carrito img {
+  object-fit: cover;
+}
+#carrito-contenedor .card .row .card-detalle {
+  padding: 0em 1em;
+}
+#carrito-contenedor .card .row .card-detalle .card-title {
+  font-weight: 700;
+  border-bottom: 1px gray solid;
+  text-align: start;
+}
+#carrito-contenedor .card .row .card-detalle .card-text {
+  margin-bottom: 0.2em;
+}
+#carrito-contenedor .card .row .eliminar {
+  align-self: center;
+  background: rgb(219, 206, 161);
+  border: none;
+  object-fit: contain;
+  height: 100%;
+}
+#carrito-contenedor .card .row .eliminar:focus {
+  box-shadow: none;
+}
+
+.totalCarrito {
+  border-bottom: solid 1.2px gray;
+  padding: 1em;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.botonCarrito {
+  display: none;
+}
+
+.apareceBtn {
+  display: flex;
+  justify-content: space-around;
+}
+.apareceBtn .pagar {
+  border: 2px solid #98c998;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.5em 2em;
+  margin-bottom: 1em;
+  background: rgb(243, 243, 225);
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+}
+.apareceBtn .borrarCarrito {
+  border: 2px solid #ff9999;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  background: rgb(243, 243, 225);
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+}
+
+/* ------------------------------ fin productos ----------------------------- */
+
+
